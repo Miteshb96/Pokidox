@@ -1,0 +1,139 @@
+.container {
+  padding: 0px 50px 50px 50px;
+  background-color: #dfeced;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 50px;
+  /* Space between cards */
+}
+
+.card {
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  border: 1px dashed black;
+}
+
+a {
+  text-decoration: none;
+}
+
+.image {
+  margin-bottom: 35px;
+  height: 200px;
+  /* width: 160px; */
+}
+
+.card img {
+  min-width: 80%;
+  max-width: 80%;
+  border-radius: 4px;
+}
+
+.pagination {
+  margin: 40px 20px 0px 0px;
+  display: flex;
+  justify-content: space-around;
+  /* width: max-content; */
+}
+
+/* Mobile styling: Adjusts layout for smaller screens */
+@media (max-width: 400px) {
+  .container {
+    padding: 0px 15px 15px 15px;
+    background-color: #dfeced;
+    /* Center align items */
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    /* Space between cards */
+  }
+
+  .card {
+    background: #f0f0f0;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    border: 1px dashed black;
+  }
+
+  .image {
+    margin-bottom: 35px;
+    height: 100px;
+    /* width: 160px; */
+  }
+
+  .pagination {
+    margin: 40px 20px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    width: fit-content;
+  }
+
+}
+
+@media (max-width: 1100px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    /* Space between cards */
+  }
+}
+
+@media (max-width: 800px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    /* Space between cards */
+  }
+}
+
+@media (max-width: 650px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    /* Space between cards */
+  }
+}
+
+@media (max-width: 520px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    /* Space between cards */
+  }
+
+  .pagination {
+    margin: 40px 20px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    width: fit-content;
+  }
+}
+
+@media (max-width: 350px) {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    /* Space between cards */
+  }
+
+  .pagination {
+    margin: 40px 20px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    width: fit-content;
+  }
+}

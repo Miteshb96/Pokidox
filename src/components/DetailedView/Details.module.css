@@ -1,0 +1,493 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.crossbutton {
+  display: none;
+  ;
+}
+
+.extraHeader {
+  display: flex;
+  width: fit-content;
+  justify-content: space-around;
+}
+
+.card_container {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  max-width: 800px;
+  overflow: auto;
+  padding: 40px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  background-color: #dfeced;
+}
+
+.pokemon_info {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  border: 1px dashed black;
+  max-height: 300px;
+  margin-top: -80px;
+}
+
+.evolcard {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: #f0f0f0;
+  border-radius: 8px;
+  padding: 15px;
+  text-align: center;
+  border: 1px dashed black;
+  max-height: 300px;
+}
+
+.paragraph {}
+
+.pokemon_img {
+  width: 200px;
+  height: 300px;
+  margin-right: 10px;
+}
+
+.description {
+  flex-grow: 1;
+}
+
+.description h1 {
+  font-size: 1.3em;
+  margin: 0;
+  color: #333;
+}
+
+.description p {
+  font-size: 1.1em;
+  color: #2e3156;
+  padding: 0px 25px;
+}
+
+.contentWrapper {
+  display: flex;
+}
+
+.pokemon_details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.stats div {
+  font-size: 0.9em;
+  color: #2e3156;
+}
+
+.stats div dt {
+  font-weight: 900;
+  margin-bottom: 8px;
+}
+
+.stats div dd {
+  margin-inline-start: 0px;
+}
+
+.types_weaknesses {
+  display: flex;
+  justify-content: space-between;
+}
+
+.types,
+.weaknesses {
+  display: flex;
+  gap: 5px;
+}
+
+.type,
+.weakness {
+  padding: 3px 6px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  color: white;
+}
+
+.type {
+  margin-right: 5px;
+}
+
+.weakness {
+  background-color: #f85888;
+  margin-right: 5px;
+}
+
+.border {
+  border: 1px solid #2e3156;
+  color: #2e3156;
+}
+
+.stats_section {
+  padding: 0px 25px 25px 25px;
+  border: 1px solid #afd2d1;
+  border-radius: 8px;
+  background: #afd2d1;
+}
+
+.evolution_section {
+  margin-top: 55px;
+  padding: 0px 25px 25px 0px;
+}
+
+.evolution_chain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.evolName {
+  font-size: 20px;
+  font-weight: 600;
+  color: "#2e3156"
+}
+
+.evolution_img {
+  width: 130px;
+  height: 220px;
+  margin-right: 10px;
+}
+
+.stats_bars {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8em;
+}
+
+.stat span {
+  font-size: 0.9rem;
+  font-weight: 900px;
+  width: 100px;
+}
+
+.progress_bar {
+  width: 70%;
+  background-color: #93b2b3;
+  color: white;
+  /* border-radius: 5px; */
+  height: 18px;
+  margin-left: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress {
+  height: 100%;
+  background-color: #2e3156;
+  /* border-radius: 5px; */
+}
+
+.progress span {
+  padding: 5px;
+}
+
+.read_more {
+  border-bottom: 1px solid black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.read_more:hover {
+  border-bottom: 1px solid black;
+  font-size: 15px;
+  color: #93b2b3;
+}
+
+.normal {
+  background-color: #DDCBD0;
+}
+
+.fighting {
+  background-color: #FCC1B0;
+}
+
+.flying {
+  background-color: #B2D2E8;
+}
+
+.poison {
+  background-color: #CFB7ED;
+}
+
+.ground {
+  background-color: #F4D1A6;
+}
+
+.rock {
+  background-color: #C5AEA8;
+}
+
+.bug {
+  background-color: #C1E0C8;
+}
+
+.ghost {
+  background-color: #D7C2D7;
+}
+
+.steel {
+  background-color: #C2D4CE;
+}
+
+.fire {
+  background-color: #EDC2C4;
+}
+
+.water {
+  background-color: #CBD5ED;
+}
+
+.grass {
+  background-color: #C0D4C8;
+}
+
+.electric {
+  background-color: #E2E2A0;
+}
+
+.psychic {
+  background-color: #DDC0CF;
+}
+
+.ice {
+  background-color: #C7D7DF;
+}
+
+.dragon {
+  background-color: #CADCDF;
+}
+
+.dark {
+  background-color: #C6C5E3;
+}
+
+.fairy {
+  background-color: #E4c0CF;
+}
+
+.shadow {
+  background-color: #CACACA;
+}
+
+@media (max-width: 1000px) {
+  .card {
+    background: #f0f0f0;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    border: 1px dashed black;
+    max-height: 300px;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 575px) {
+
+  .card_container {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    max-width: 800px;
+    overflow: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-family: Arial, sans-serif;
+    background-color: #dfeced;
+  }
+
+  /* }
+
+@media (max-width: 550px) { */
+  .extraHeader {
+    display: none;
+    width: fit-content;
+    justify-content: space-around;
+  }
+
+  .crossbutton {
+    display: flex;
+    width: fit-content;
+    justify-content: space-around;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    background: #f0f0f0;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    border: 1px dashed black;
+    max-height: 200px;
+    margin-top: 0px;
+  }
+
+  .pokemon_img {
+    width: 100px;
+    height: 150px;
+    margin-right: 10px;
+  }
+
+  .description p {
+    font-size: 1.1em;
+    color: #2e3156;
+    padding: 0px 0px 0px 20px;
+    font-size: 14px;
+  }
+
+  .stats_section {
+    padding: 10px 40px 40px 40px;
+    border: 1px solid #afd2d1;
+    border-radius: 8px;
+    background: #afd2d1;
+  }
+
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  .stats div {
+    font-size: 0.9em;
+    color: #2e3156;
+    margin-bottom: 20px;
+  }
+
+  .stats div dt {
+    font-weight: 900;
+    margin-bottom: 8px;
+  }
+
+  .stats div dd {
+    margin-inline-start: 0px;
+  }
+
+  .stats_bars {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 18px;
+  }
+
+  .stat {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8em;
+  }
+
+  .stat span {
+    font-size: 0.9rem;
+    font-weight: 900px;
+    width: 100px;
+  }
+
+  .progress_bar {
+    width: 70%;
+    background-color: #93b2b3;
+    color: white;
+    /* border-radius: 5px; */
+    height: 18px;
+    margin-left: 10px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .progress {
+    height: 100%;
+    background-color: #2e3156;
+    /* border-radius: 5px; */
+  }
+
+  .progress span {
+    padding: 5px;
+  }
+
+  .evolcard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background: #f0f0f0;
+    border-radius: 8px;
+    padding: 5px;
+    text-align: center;
+    border: 1px dashed black;
+    max-height: 120px;
+  }
+
+  .evolution_img {
+    width: 60px;
+    height: 80px;
+    margin-right: 10px;
+  }
+
+  .evolName {
+    font-size: 15px;
+    font-weight: 600;
+    color: "#2e3156"
+  }
+
+  .evolNo {
+    font-size: 12px;
+    color: "#2e3156";
+  }
+
+  .evolution_section {
+    margin-top: 55px;
+    padding: 0px 10px 25px 10px;
+  }
+
+  .arrow {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 400px) {
+  .stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .stats div {
+    font-size: 0.9em;
+    color: #2e3156;
+    margin-bottom: 20px;
+  }
+}
